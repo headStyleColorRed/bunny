@@ -3,7 +3,7 @@ version: "3.5"
 services:
   bunny:
     container_name: bunny
-    build: ./dist
+    build: .
     restart: always
     networks:
       - web-bunny
@@ -11,5 +11,5 @@ services:
       - 8080:80
 
 networks:
-  web-hive:
+  web-bunny:
     name: web-bunny
